@@ -1,4 +1,4 @@
-f = open("AlgoBowlInputFile.txt")
+f = open("input.txt")
 
 content = f.read()
 inputArr = content.split()
@@ -28,8 +28,13 @@ def calculateValue(x):
 for i in range(1, len(inputArr)):
     calculateValue(inputArr[i])
 
+for x in calcArr:
+    print(x)
+
 w = open("output.txt", "w")
 w.write(str(len(calcArr)) + "\n")
 
 for x in calcArr:
     w.write(str(x[0]) + " " + str(x[1]) + "\n")
+
+w.close()
