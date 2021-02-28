@@ -24,7 +24,7 @@ finput.close()
 if (len(elements[0].split()) != 1):
     print('Error in output file: Wrong first line format')
 elif (int(elements[0]) != len(elements)-1):
-        print('Error in output file: wrong number of additions')
+    print('Error in output file: wrong number of additions')
 else:
     for i in range(1, len(elements)):
         addends = elements[i].split()
