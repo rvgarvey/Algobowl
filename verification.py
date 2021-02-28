@@ -1,7 +1,7 @@
 # Verification
 
 foutput = open("output.txt")
-finput = open("input.txt")
+finput = open("input2.txt")
 
 content = foutput.read()
 elements = content.splitlines()
