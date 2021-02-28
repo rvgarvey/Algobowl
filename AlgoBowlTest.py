@@ -28,5 +28,8 @@ def calculateValue(x):
 for i in range(1, len(inputArr)):
     calculateValue(inputArr[i])
 
+w = open("output.txt", "w")
+w.write(str(len(calcArr)) + "\n")
+
 for x in calcArr:
-    print(x)
+    w.write(str(x[0]) + " " + str(x[1]) + "\n")
