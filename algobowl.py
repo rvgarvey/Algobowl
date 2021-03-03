@@ -79,6 +79,8 @@ for i in range(1, len(inputArr)):
     else:
         difference = calculateValue2(inputArr[i]-inputArr[i-1], calcArr4)
         calcArr4.append([inputArr[i-1], difference, inputArr[i]])
+  
+
 
 ##
 ########################################
@@ -127,3 +129,13 @@ generateOutput(calcArr4, "output4.txt")
 
 # I'm thinking that we can just use the better one
 # but maybe you guys will come up with something better
+
+bestArr = calcArr1
+if (len(calcArr2) < len(bestArr)):
+    bestArr = calcArr2
+if (len(calcArr3) < len(bestArr)):
+    bestArr = calcArr3
+if (len(calcArr4) < len(bestArr)):
+    bestArr = calcArr4
+
+generateOutput(bestArr, "AlgoBowlOutput.txt")
