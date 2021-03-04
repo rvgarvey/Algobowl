@@ -43,7 +43,6 @@ for i in range(1, len(inputArr)):
 def findPredecessor(value):
     count = len(calcArr2) - 2
     
-    if value == 9: shouldPrint = True
     minimum = 0
     returnVal = -1
     while (count >= 0):
@@ -91,4 +90,4 @@ bestArr = calcArr1
 if (len(calcArr2) < len(bestArr)):
     bestArr = calcArr2
 
-generateOutput(bestArr, "AlgoBowlOutput.txt")
+# generateOutput(bestArr, "AlgoBowlOutput.txt")

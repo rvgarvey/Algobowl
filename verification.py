@@ -1,7 +1,7 @@
 # Verification
 
-foutput = open("output1.txt")
-finput = open("inputs/input_group272.txt")
+foutput = open("AlgoBowlOutput.txt")
+finput = open("inputs/input_group289.txt")
 
 content = foutput.read()
 elements = content.splitlines()
